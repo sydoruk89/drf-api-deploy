@@ -1,0 +1,7 @@
+build:
+    docker:
+      web: Dockerfile
+setup:
+  config:
+    SECRET_KEY: 'ejnx2w_a3en_g+xy4h(_eq$h3q8km@(n*i@nt+=6lutik2xn+9'
+    DEBUG: TRUE
