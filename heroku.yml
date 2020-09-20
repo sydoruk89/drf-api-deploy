@@ -1,13 +1,3 @@
 build:
     docker:
       web: Dockerfile
-  run:
-    web: gunicorn hello_django.wsgi:application --bind 0.0.0.0:$PORT
-  release:
-    image: web
-    command:
-      - python manage.py collectstatic --noinput
-    setup:
-        config:
-            SECRET_KEY: 'ejnx2w_a3en_g+xy4h(_eq$h3q8km@(n*i@nt+=6lutik2xn+9'
-            DEBUG: TRUE
